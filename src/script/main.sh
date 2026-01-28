@@ -108,7 +108,7 @@ done
 
 echo "All training completed!"
 echo "Starting evaluation..."
-eval_script="${TTCS_EVAL_SCRIPT:-${TTCS_WORKING_DIR}/evaluation/eval_single_math_data.sh}"
+eval_script="${TTCS_EVAL_SCRIPT:-${TTCS_WORKING_DIR}/evaluation/eval.sh}"
 bash "$eval_script" "${variant}"  "${solver_eval_step}" "${solver_eval_num_iter}" "${base_model_name}" "${dataset}" || {
     echo "Error: Evaluation failed"
     exit 1

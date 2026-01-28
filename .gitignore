@@ -124,7 +124,7 @@ ENV/
 *.lock
 
 # data
-*.parquet
+# *.parquet  # Commented out to allow uploading parquet files
 
 
 # local logs
