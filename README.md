@@ -5,7 +5,7 @@
 ## 🏴 Overview
 
 <p align="center">
-  <img src="./images/final-framework.pdf" width="90%" alt="TTCS Framework"/>
+  <img src="./images/final-framework.png" width="90%" alt="TTCS Framework"/>
 </p>
 
 **TTCS (Test-Time Curriculum Synthesis)** is a co-evolving test-time training framework built on an iterative GRPO optimization loop. It consists of two agents: a **Synthesizer** policy $\pi_{\phi}$ and a **Solver** policy $\pi_{\theta}$, both initialized from the same pretrained model.
@@ -28,7 +28,7 @@ The two agents **co-evolve in a closed loop**: the Solver's current performance 
 ## 📊 Main Results
 
 <p align="center">
-  <img src="./images/combined-figure-AIME25-MATH500-5.pdf" width="80%" alt="Performance Comparison"/>
+  <img src="./images/combined-figure-AIME25-MATH500-5.png" width="80%" alt="Performance Comparison"/>
 </p>
 
 The table below compares TTCS against other baselines on mathematical reasoning benchmarks. Best results are highlighted in **bold**.
