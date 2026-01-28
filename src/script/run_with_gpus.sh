@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # =============================================================================
-# run_with_gpus.sh - GPU-aware launcher for Self-evolving-Agent training
+# run_with_gpus.sh - GPU-aware launcher for TTCS training
 # =============================================================================
 #
 # Usage:
