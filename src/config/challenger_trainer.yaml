@@ -1,0 +1,38 @@
+hydra:
+  searchpath:
+    - file://verl/trainer/config
+
+defaults:
+  - ppo_trainer
+  - _self_
+
+data:
+  gen_batch_size: ${data.train_batch_size}
+  num_querys: 1000
+  max_prompt_length: 4096
+  return_raw_chat: True
+  topics_path: null
+  dynamic_topics: False
+  apply_chat_template_kwargs:
+    enable_thinking: False
+
+
+reward_model:
+  reward_manager: challenger
+  reward_kwargs:
+    storage_path: null
+    
+
+    
+
+    
+
+algorithm:
+  filter_groups:
+    _target_: verl.trainer.config.FilterGroupsConfig
+    enable: False # We try to avoid forgetting to set enable
+    metric: null # acc / score / seq_reward / seq_final_reward / ...
+    max_num_gen_batches: 0 # Non-positive values mean no upper limit
+
+trainer:
+  project_name: verl-challenger

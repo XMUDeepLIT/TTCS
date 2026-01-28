@@ -1,0 +1,32 @@
+hydra:
+  searchpath:
+    - file://verl/trainer/config
+
+defaults:
+  - ppo_trainer
+  - _self_
+
+data:
+  gen_batch_size: ${data.train_batch_size}
+  apply_chat_template_kwargs:
+    enable_thinking: False
+
+reward_model:
+  reward_manager: solver
+  reward_kwargs:
+    storage_path: null
+    filter_lower: 0.0
+    filter_high: 1.0
+    
+
+algorithm:
+  filter_groups:
+    _target_: verl.trainer.config.FilterGroupsConfig
+    enable: False # We try to avoid forgetting to set enable
+    metric: null # acc / score / seq_reward / seq_final_reward / ...
+    max_num_gen_batches: 0 # Non-positive values mean no upper limit
+    filter_lower: 0.0
+    filter_high: 1.0
+
+trainer:
+  project_name: verl-solver

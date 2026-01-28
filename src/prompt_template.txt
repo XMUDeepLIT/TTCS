@@ -1,0 +1,105 @@
+You are an expert mathematics problem setter. Your task is to generate a **Structurally Isomorphic** but **Surface-Distinct** problem based on a provided "Reference Question."
+
+**Instructions:**
+
+1.  **Analyze & Isolate:** Identify the "Decisive Lemma" (the single core logical step) required to solve the reference.
+
+2.  **Object Mapping & Structural Shift:**
+    -   Map the reference’s variables/setting to a different mathematical representation.
+    -   **Constraint:** At least one of the **Main Objects**, **Setting**, or **Constraint Type** must change. This must change *what is being counted/optimized/constructed*, not merely rename variables or swap story nouns.
+
+3.  **Immediate-Equivalence Embargo (CRITICAL):**
+    -   The new problem statement must **NOT** explicitly include any immediate algebraic equivalent of the reference’s key identity.
+    -   **Banned forms:** Expanded polynomials, completing the square, Vieta restatements, or absolute-value splits **IF AND ONLY IF** they make the reference skeleton immediately obvious.
+    -   **Allowed:** Standard mathematical notation (like modulo arithmetic or standard substitutions) is permitted **ONLY IF** it is necessary for a natural, concise problem statement and does not trivially reveal the solution path.
+
+4.  **Verifiable Complexity Alignment:**
+    -   Ensure the reduced search space is verifiable and comparable.
+    -   In the Design block, you must state exactly one **Concrete Metric**.
+    -   **Selection Rule:** Choose the metric that best reflects the **dominant search/optimization dimension**. Do not default to `key-steps` unless no other option fits.
+    -   **Formats:**:
+        -   `#cases=k` (Enumeration/Casework)
+        -   `#factor-pairs=k` (Number Theory)
+        -   `DOF=n` (Geometry/Optimization degrees of freedom)
+        -   `independent-axes=k` (Combinatorics/Probability dimensions)
+        -   `key-steps=k` (Fallback for logic/recursion depth, integer $k \in [2, 8]$)
+    -   **Constraint:** Do not use vague terms like "similar magnitude".
+
+5.  **Output Type Lock (CRITICAL):**
+    -   The Final Answer must be a **Single Scalar Number** (Integer, Fraction, or Simplest Radical Form).
+    -   **Aggregation Rule:** If the math naturally yields a set of solutions (e.g., "Find all $x$"), you MUST change the question to ask for the **Sum**, **Product**, **Count**, or **Maximum** of those solutions.
+    -   **Forbidden Outputs:**
+        -   **No Sets:** (e.g., $\{{1, 2\}}$ is banned $\to$ Ask for $1+2=3$).
+        -   **No Functions:** (e.g., $f(x)=e^x$ is banned $\to$ Ask for $f(1)$).
+        -   **No Text/Boolean:** (e.g., "Yes", "True", "Convergent" are banned).
+        -   **No Proofs:** Never ask "Prove that...".
+        -   **No Subparts:** The question must be atomic (no "(a)... (b)...").
+
+6.  **Fail-Safe Rule:**
+    -   If you cannot ensure isomorphism without leaking the skeleton or losing uniqueness, **discard the current strategy** and switch to a different Shift Strategy (e.g., Domain Transfer $\leftrightarrow$ Algebraic Masking) before generating.
+
+**Output Format (Strict):**
+
+1.  **[Design]:**
+    -   *Lemma:* One short sentence.
+    -   *Shift:* Strategy used (e.g., "Divisibility $\to$ Equation").
+    -   *Verification:* Confirm uniqueness and include the **Concrete Metric**. Do NOT reveal the specific reduced equation.
+2.  **<question> Block:**
+    -   Start immediately with `<question>`.
+    -   Content: The problem statement in LaTeX. **NO** headings, **NO** introductions.
+    -   End immediately with `</question>`.
+3.  **Final Answer:**
+    -   Must be the **last line**.
+    -   Format strictly: `Final Answer: \boxed{{value}}` (Value must be a single scalar number).
+
+**Examples:**
+
+---
+### Example 1
+**Reference Question:**
+Let $A$ be the set of positive integer divisors of $2025$. Let $B$ be a randomly selected subset of $A$. The probability that $B$ is a nonempty set with the property that the least common multiple of its element is $2025$ is $\frac{{m}}{{n}}$. Find $m+n$.
+
+**[Design]:**
+Lemma: Inclusion-Exclusion on independent maximal conditions.
+Shift: Domain Transfer (Number Theory $\to$ Geometric Combinatorics).
+Verification: Boundary attainment on two independent axes matches the same maximal-condition logic; unique fraction verified. Metric: independent-axes=2.
+<question>
+On the coordinate plane, consider the set of $15$ lattice points $P=\{{(x,y)\in \mathbb{{Z}}^2:\ 0\le x\le 4,\ 0\le y\le 2\}}$. A subset $S\subseteq P$ is chosen uniformly at random. Let $R(S)$ be the smallest axis-parallel rectangle containing $S$. The probability that $S\neq\varnothing$ and the upper-right vertex of $R(S)$ is $(4,2)$ is $\frac{{m}}{{n}}$ in lowest terms. Find $m+n$.
+</question>
+Final Answer: \boxed{{237}}
+
+---
+### Example 2
+**Reference Question:**
+Find the sum of all positive integers $n$ such that $n + 2$ divides the product $3(n + 3)(n^2 + 9)$.
+
+**[Design]:**
+Lemma: Polynomial Remainder Theorem evaluation at a fixed input.
+Shift: Algebraic Masking (Divisibility $\to$ Feasibility of an integer-parameter equation).
+Verification: After reduction, feasibility is determined by enumerating factor pairs of a fixed constant under positivity constraints; exactly two cases work, giving a unique sum. Metric: #factor-pairs=2.
+<question>
+Find the sum of all positive integers $x$ such that the equation $xy + 2x + 2y = 35$ has a solution in positive integers for $y$.
+</question>
+Final Answer: \boxed{{12}}
+
+---
+### Example 3
+**Reference Question:**
+Find the largest possible real part of \[(75+117i)z+\frac{{96+144i}}{{z}}\]where $z$ is a complex number with $|z|=4$.
+
+**[Design]:**
+Lemma: Maximizing a linear functional over a circle boundary.
+Shift: Domain Transfer (Complex Numbers $\to$ 2D Geometry).
+Verification: Reduction yields a dot-product maximization over a 1D manifold with a unique maximum value. Metric: DOF=1.
+<question>
+A point $P=(x,y)$ moves along the circle $x^2+y^2=16$. From $P$, form a new point $Q$ by reflecting $P$ across the $x$-axis and then dilating about the origin by a factor of $\tfrac{{1}}{{16}}$. Define $F(P)=23x-41y+58x_Q+22y_Q$. Find the maximum possible value of $F(P)$, expressed in simplest radical form.
+</question>
+Final Answer: \boxed{{\frac{{3}}{{2}}\sqrt{{17810}}}}
+
+---
+
+**Current Task:**
+**Reference Question:**
+{reference_question}
+
+**[Design]:**
