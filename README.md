@@ -1,5 +1,5 @@
 # TTCS: Test-Time Curriculum Synthesis for Self-Evolving
-
+[![Static Badge](https://img.shields.io/badge/arxiv-2601.22628-ff0000?style=for-the-badge&labelColor=000)](https://arxiv.org/abs/2601.22628) [![Static Badge](https://img.shields.io/badge/huggingface-fcd022?style=for-the-badge&logo=huggingface&logoColor=000)](https://huggingface.co/papers/2601.22628)
 > A self-evolving framework that enhances LLM mathematical reasoning through dynamic Synthesizer-Solver co-evolution at test time.
 
 ## 🏴 Overview
