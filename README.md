@@ -165,9 +165,9 @@ Our framework builds upon the excellent work of:
 If you find TTCS helpful for your research, please cite our paper:
 
 ```bibtex
-@article{ttcs2026,
+@article{yang2026ttcs,
   title={TTCS: Test-Time Curriculum Synthesis for Self-Evolving},
-  author={},
+  author={Yang, Chengyi and Xiang, Zhishang and Tang, Yunbo and Teng, Zongpei and Huang, Chengsong and Long, Fei and Liu, Yuhan and Su, Jinsong},
   journal={arXiv preprint arXiv:2601.22628},
   year={2026}
 }
@@ -177,22 +177,6 @@ If you find TTCS helpful for your research, please cite our paper:
 - 📄 **arXiv:** [https://arxiv.org/abs/2601.22628](https://arxiv.org/abs/2601.22628)
 - 🤗 **HuggingFace Papers:** [https://huggingface.co/papers/2601.22628](https://huggingface.co/papers/2601.22628)
 
----
-
-## 🍀 Citation
-
-If you find this work helpful, please cite our paper:
-
-```bibtex
-@article{yang2026ttcs,
-  title={TTCS: Test-Time Curriculum Synthesis for Self-Evolving},
-  author={Yang, Chengyi and Xiang, Zhishang and Tang, Yunbo and Teng, Zongpei and Huang, Chengsong and Long, Fei and Liu, Yuhan and Su, Jinsong},
-  journal={arXiv preprint arXiv:2601.22628},
-  year={2026}
-}
-```
-
----
 
 ## 📄 License
 
