@@ -29,41 +29,11 @@ from verl.utils.reward_score import default_compute_score
 from verl.workers.reward_manager import get_reward_manager_cls
 from verl.workers.reward_manager.abstract import AbstractRewardManager, RawRewardFn
 # Import reward managers - prefer local se_code_ttrl package
-try:
-    from se_code_ttrl.reward_manager import (
-        SolverRewardManager,
-        ChallengerEntropyRewardManager,
-        ChallengerGANRewardManager,
-        ChallengerRuleRewardManager,
-        ChallengerRewardManager,
-    )
-except ImportError:
-    # Fallbacks for other package structures
-    try:
-        from se_code_auto.reward_manager import (  # legacy name
-            SolverRewardManager,
-            ChallengerEntropyRewardManager,
-            ChallengerGANRewardManager,
-            ChallengerRuleRewardManager,
-            ChallengerRewardManager,
-        )
-    except ImportError:
-        try:
-            from se_code.reward_manager import (
-                SolverRewardManager,
-                ChallengerEntropyRewardManager,
-                ChallengerGANRewardManager,
-                ChallengerRuleRewardManager,
-                ChallengerRewardManager,
-            )
-        except ImportError:
-            from reward_manager import (
-                SolverRewardManager,
-                ChallengerEntropyRewardManager,
-                ChallengerGANRewardManager,
-                ChallengerRuleRewardManager,
-                ChallengerRewardManager,
-            )
+from src.reward_manager import (
+    SolverRewardManager,
+    ChallengerRewardManager,
+)
+
 
 def _call_with_kwargs(raw_fn, extra_kwargs, *args, **kwargs):
     """Calls `raw_fn` by merging `extra_kwargs` into call-time `kwargs`, with `extra_kwargs` taking precedence.

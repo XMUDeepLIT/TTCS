@@ -21,7 +21,7 @@ import socket
 import hydra
 import ray
 from omegaconf import OmegaConf
-from se_code_ttrl.Challenger_dataset import ChallengerTopicDataset
+from src.Challenger_dataset import ChallengerTopicDataset
 from verl.experimental.dataset.sampler import AbstractSampler
 from verl.trainer.constants_ppo import get_ppo_ray_runtime_env
 #from verl.trainer.ppo.ray_trainer import RayPPOTrainer

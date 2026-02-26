@@ -11,8 +11,8 @@ import os, sys
 import random
 import json
 import regex as re
-from se_code_ttrl.Challenger_dataset import get_prompts
-from se_code_ttrl.reward_manager import custom_extract_boxed_content
+from src.Challenger_dataset import get_prompts
+from src.reward_manager import custom_extract_boxed_content
 
 
 def main(args):
