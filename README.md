@@ -1,5 +1,14 @@
 # TTCS: Test-Time Curriculum Synthesis for Self-Evolving
 
+<div align="center">
+    <a href="https://arxiv.org/abs/2601.22628"><img src="https://img.shields.io/badge/Paper-arXiv-red?logo=arxiv&style=flat-square" alt="arXiv"></a>
+    <a href="https://huggingface.co/papers/2601.22628"><img src="https://img.shields.io/badge/Paper-HuggingFace-yellow?logo=huggingface&style=flat-square" alt="HuggingFace"></a>
+    <a href="https://github.com/XMUDeepLIT/TTCS"><img src="https://img.shields.io/github/stars/XMUDeepLIT/TTCS?style=flat-square" alt="GitHub Stars"></a>
+    <a href="https://github.com/XMUDeepLIT/TTCS/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=flat-square" alt="License"></a>
+</div>
+
+<br>
+
 > A self-evolving framework that enhances LLM mathematical reasoning through dynamic Synthesizer-Solver co-evolution at test time.
 
 ## 🏴 Overview
@@ -148,6 +157,40 @@ bash evaluation/eval.sh <variant_name> <eval_step> <num_iterations> <base_model_
 Our framework builds upon the excellent work of:
 - [**R-Zero**](https://github.com/Chengsong-Huang/R-Zero) - Self-Evolving Reasoning LLM
 - [**veRL**](https://github.com/volcengine/verl) - Volcano Engine Reinforcement Learning
+
+---
+
+## 📝 Citation
+
+If you find TTCS helpful for your research, please cite our paper:
+
+```bibtex
+@article{ttcs2026,
+  title={TTCS: Test-Time Curriculum Synthesis for Self-Evolving},
+  author={},
+  journal={arXiv preprint arXiv:2601.22628},
+  year={2026}
+}
+```
+
+**Links:**
+- 📄 **arXiv:** [https://arxiv.org/abs/2601.22628](https://arxiv.org/abs/2601.22628)
+- 🤗 **HuggingFace Papers:** [https://huggingface.co/papers/2601.22628](https://huggingface.co/papers/2601.22628)
+
+---
+
+## 🍀 Citation
+
+If you find this work helpful, please cite our paper:
+
+```bibtex
+@article{yang2026ttcs,
+  title={TTCS: Test-Time Curriculum Synthesis for Self-Evolving},
+  author={Yang, Chengyi and Xiang, Zhishang and Tang, Yunbo and Teng, Zongpei and Huang, Chengsong and Long, Fei and Liu, Yuhan and Su, Jinsong},
+  journal={arXiv preprint arXiv:2601.22628},
+  year={2026}
+}
+```
 
 ---
 
