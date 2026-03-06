@@ -10,7 +10,14 @@
 <br>
 
 > A self-evolving framework that enhances LLM mathematical reasoning through dynamic Synthesizer-Solver co-evolution at test time.
+## 🔥 Updates
+- [2026-3-3] Accepted by ICLR 2026 Lifelong Agent(LLA) workshop. See you in Rio De Janeiro, Brazil!
 
+- [2026-3-1] Update codes to fix some bugs in previous version.
+
+- [2026-2-2] TTCS got `#3 Paper of the day` in [huggingface daily paper](https://huggingface.co/papers/2601.22628).
+
+- [2026-1-30] We released our [paper](https://arxiv.org/abs/2601.22628) and code.
 ## 🏴 Overview
 
 <p align="center">
