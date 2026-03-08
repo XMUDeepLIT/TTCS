@@ -11,7 +11,7 @@
 
 > A self-evolving framework that enhances LLM mathematical reasoning through dynamic Synthesizer-Solver co-evolution at test time.
 ## 🔥 Updates
-- [2026-3-3] Accepted by ICLR 2026 Lifelong Agent(LLA) workshop. See you in Rio De Janeiro, Brazil!
+- [2026-3-3] Accepted by [ICLR 2026 Lifelong Agent(LLA)](https://iclr.cc/virtual/2026/workshop/10000805) workshop! See you in Rio De Janeiro, Brazil!
 
 - [2026-3-1] Update codes to fix some bugs in previous version.
 
