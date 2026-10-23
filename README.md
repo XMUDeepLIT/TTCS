@@ -1,6 +1,7 @@
 # TTCS: Test-Time Curriculum Synthesis for Self-Evolving
 
 <div align="center">
+    <a href="https://neurips.cc/virtual/2026/loc/sydney/poster/154412"><img src="https://img.shields.io/badge/NeurIPS-2026-4B44CE?style=flat-square" alt="NeurIPS 2026"></a>
     <a href="https://arxiv.org/abs/2601.22628"><img src="https://img.shields.io/badge/Paper-arXiv-red?logo=arxiv&style=flat-square" alt="arXiv"></a>
     <a href="https://huggingface.co/papers/2601.22628"><img src="https://img.shields.io/badge/Paper-HuggingFace-yellow?logo=huggingface&style=flat-square" alt="HuggingFace"></a>
     <a href="https://github.com/XMUDeepLIT/TTCS"><img src="https://img.shields.io/github/stars/XMUDeepLIT/TTCS?style=flat-square" alt="GitHub Stars"></a>
@@ -11,6 +12,8 @@
 
 > A self-evolving framework that enhances LLM mathematical reasoning through dynamic Synthesizer-Solver co-evolution at test time.
 ## 🔥 Updates
+- [2026-10-23] Accepted by [NeurIPS 2026](https://neurips.cc/virtual/2026/loc/sydney/poster/154412)! See you in Sydney, Australia!
+
 - [2026-3-3] Accepted by [ICLR 2026 Lifelong Agent(LLA)](https://iclr.cc/virtual/2026/workshop/10000805) workshop! See you in Rio De Janeiro, Brazil!
 
 - [2026-3-1] Update codes to fix some bugs in previous version.
@@ -172,15 +175,16 @@ Our framework builds upon the excellent work of:
 If you find TTCS helpful for your research, please cite our paper:
 
 ```bibtex
-@article{yang2026ttcs,
+@inproceedings{yang2026ttcs,
   title={TTCS: Test-Time Curriculum Synthesis for Self-Evolving},
   author={Yang, Chengyi and Xiang, Zhishang and Tang, Yunbo and Teng, Zongpei and Huang, Chengsong and Long, Fei and Liu, Yuhan and Su, Jinsong},
-  journal={arXiv preprint arXiv:2601.22628},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
   year={2026}
 }
 ```
 
 **Links:**
+- 🏆 **NeurIPS 2026 Poster:** [https://neurips.cc/virtual/2026/loc/sydney/poster/154412](https://neurips.cc/virtual/2026/loc/sydney/poster/154412)
 - 📄 **arXiv:** [https://arxiv.org/abs/2601.22628](https://arxiv.org/abs/2601.22628)
 - 🤗 **HuggingFace Papers:** [https://huggingface.co/papers/2601.22628](https://huggingface.co/papers/2601.22628)
 
